@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Q18. 평균 점수
+      // 영하네 반은 국어, 수학, 영어 시험을 보았습니다. 영하는 친구들의 평균 점수를 구해주기로 했습니다.
+      //공백으로 구분하여 세 과목의 점수가 주어지면 전체 평균 점수를 구하는 프로그램을 작성하세요.
+      //단, 소숫점 자리는 모두 버립니다.
+
+      //1
+      // const point = prompt("국어, 수학, 영어 점수를 적으시오.");
+      // const word = point.split(" ");
+      // const num = word.map((i) => Number(i));
+
+      // let sum = 0;
+      // for (let i = 0; i < num.length; i++) {
+      //   sum += num[i];
+      // }
+      // const aver = sum / num.length;
+      // console.log(Math.floor(aver));
+
+      //2
+      const point = prompt("국어, 수학, 영어 점수를 적으시오.");
+      const word = point.split(" ");
+      const num = word.map((i) => Number(i));
+      const result = num.reduce(function add(sum, val) {
+        return sum + val;
+      }, 0);
+      const average = result / num.length;
+      console.log(Math.floor(average));
+    </script>
+  </body>
+</html>
+
+<!-- ok -->

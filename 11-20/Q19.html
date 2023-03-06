@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Q19. 제곱을 구하자
+      // 공백으로 구분하여 두 숫자 a와 b가 주어지면, a의 b승을 구하는 프로그램을 작성하세요.
+      const num = prompt("숫자 2가지를 입력하시오.");
+      const number = num.split(" ");
+
+      const apart = number.map((i) => Number(i));
+      const a = apart[0];
+      const b = apart[1];
+      const double = Math.pow(a, b);
+      console.log(double);
+    </script>
+  </body>
+</html>
+
+<!-- ok -->
