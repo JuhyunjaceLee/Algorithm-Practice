@@ -14,6 +14,7 @@
       // 입력 : hqllo my namq is hyqwon
       // 출력 : hello my name is hyewon
 
+      //정규식 사용
       const str1 = "querty";
       const str11 = str1.replace("q", "e");
       console.log(str11);
@@ -21,6 +22,14 @@
       const str2 = "hqllo my namq is hyqwon";
       const str22 = str2.replace(/q/g, "e");
       console.log(str22);
+
+      //함수 사용
+      const word = prompt("입력하세요.");
+      function replaceAll(str, searchStr, replaceStr) {
+        return str.split(searchStr).join(replaceStr);
+      }
+
+      console.log(replaceAll(word, "q", "e"));
     </script>
   </body>
 </html>
