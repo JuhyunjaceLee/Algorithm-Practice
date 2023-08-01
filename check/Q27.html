@@ -18,24 +18,33 @@
 
       // 출력
       // {'Yujin': 70, 'Hyewon': 100}
-      const person = prompt("학생의 이름을 입력하세요.");
-      // console.log(person);
+      // const person = prompt("학생의 이름을 입력하세요.");
+      // // console.log(person);
 
-      const number = prompt("학생의 점수를 입력하세요.");
-      // console.log(number);
+      // const number = prompt("학생의 점수를 입력하세요.");
+      // // console.log(number);
 
-      const name = person.split(" ");
-      // console.log(name);
+      // const name = person.split(" ");
+      // // console.log(name);
 
-      const point = number.split(" ");
-      // console.log(point);
+      // const point = number.split(" ");
+      // // console.log(point);
 
-      const classes = {};
+      // const classes = {};
 
-      console.log(classes);
-      // classes.Yujin = 70;
-      // classes.Hyewon = 100;
       // console.log(classes);
+      // // classes.Yujin = 70;
+      // // classes.Hyewon = 100;
+      // // console.log(classes);
+      const keys = prompt("이름을 입력하세요").split(" ");
+      const values = prompt("점수를 입력하세요").split(" ");
+      const obj = {};
+
+      for (let i = 0; i < keys.length; i++) {
+        obj[keys[i]] = parseInt(values[i], 10);
+      }
+
+      console.log(obj);
     </script>
   </body>
 </html>
